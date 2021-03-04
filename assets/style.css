@@ -22,6 +22,22 @@ nav{
     padding-bottom: 20px;
 }
 
+.search-form{
+    float: left;
+    border: 2px solid black;
+    background: #f0f8ff;
+}
+
+#button-search{
+    position: relative;
+    left: 4px;
+    padding: 10px 15px;
+    border: 0px solid #008080;
+    background-color: gray ;
+    color:#fafafa;
+    font-weight:bold;
+}
+
 .nav-item{
     background-color: #b0b0b0;
     height: 35px;
