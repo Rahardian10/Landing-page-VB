@@ -25,7 +25,8 @@ nav{
 .search-form{
     float: left;
     border: 2px solid black;
-    background: #f0f8ff;
+    background: gray;
+    border-radius: 10px;
 }
 
 #button-search{
@@ -36,6 +37,7 @@ nav{
     background-color: gray ;
     color:#fafafa;
     font-weight:bold;
+    border-radius: 10px;
 }
 
 .nav-item{
