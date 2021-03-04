@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -12,7 +12,7 @@
     <title>Vokasi Bisa</title>
   </head>
   <body>
-    <div class="container">
+    <div class="">
         <nav>
             <div class="nav-toggle">
                 <img src="assets/img/logo.png" alt="" class="img-logo">
@@ -21,7 +21,7 @@
             <div class="navbar-link">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                      <a class="nav-link active" aria-current="page" id="beranda" href="#">Beranda</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Tentang Kami</a>
@@ -36,11 +36,45 @@
                       <a class="nav-link" href="#">Mitra SMK</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                      <!-- <a class="nav-link-dark" href="#" tabindex="-1">Login</a> -->
+                      <button class="btn" tabindex="-1">Login</button>
                     </li>
                   </ul>
             </div>
         </nav>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/slider.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div>
+        <p class="slider">#VOKASIINFO</p>
+        <p class="slider">MAGANG TERSTRUKTUR UNTUK<br>
+          LINK AND MATCH PENDIDIKAN <br>
+          VOKASI</p>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

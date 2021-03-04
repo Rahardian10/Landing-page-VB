@@ -1,8 +1,8 @@
 
 
-.container{
+/* .container{
     margin:0 9px, 3px, 1px;
-}
+} */
 
 .img-logo{
     width: 190px;
@@ -19,12 +19,37 @@ nav{
     justify-content: space-between;
     float: left;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .nav-item{
-    background-color: gray;
+    background-color: #b0b0b0;
+    height: 35px;
 }
 
 a.nav-link{
     color: white;
 }
+
+a.nav.link-dark {
+    color: #0d2341;
+}
+
+.btn {
+    background: transparent;
+    color: #0d2341;
+}
+
+.navbar-link {
+    position: absolute;
+    left: 340px;
+    top: 25px;
+}
+ #beranda {
+     background-color: #0d2341;
+     height: 35px;
+ }
+
+ .slider {
+     font: 600;
+ }
