@@ -43,6 +43,7 @@ nav{
 .nav-item{
     background-color: #b0b0b0;
     height: 35px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a.nav-link{
@@ -63,11 +64,30 @@ a.nav.link-dark {
     left: 340px;
     top: 25px;
 }
- #beranda {
+#beranda {
      background-color: #0d2341;
      height: 35px;
  }
 
- .slider {
+.slider {
      font: 600;
  }
+
+.img-thumbnail {
+	width: 250px;
+}
+ .slide {
+     padding-bottom: 10px;
+ }
+
+.berita {
+    font-family: 'Oswald', sans-serif;
+}
+
+.text-berita {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-img {
+    
+}
