@@ -132,78 +132,111 @@ a.nav.link-dark {
     text-align: center;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    padding-top: 30px;
-    background-size: cover;
-
+/* slider */
+  .slider{
+    padding-top: 75px;  
+    margin-bottom: 70px;
+    width: 800px;
+    height: 500px;
+    border-radius: 0;
+    overflow: hidden;
   }
   
-  /* Slides */
-  .mySlides {
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
     display: none;
-    padding: 80px;
-    text-align: center;
   }
   
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
   }
   
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-      text-align: center;
-      padding: 20px;    
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 1s;
   }
   
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
   }
   
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
   
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
-
-  .carousel {
-    width: 100x;
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
   }
