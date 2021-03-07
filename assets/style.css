@@ -1,9 +1,4 @@
-
-
-/* .container{
-    margin:0 9px, 3px, 1px;
-} */
-
+/* NAVBAR */
 .img-logo{
     width: 210px;
 }
@@ -12,32 +7,16 @@
     padding-top: 10px;
     margin-left: 17px;
     padding-right: 70px;
+    margin-bottom: 30px;
 }
 
+/* Navbar */
 nav{
     display: flex;
     justify-content: space-between;
     float: left;
     align-items: center;
     padding-bottom: 20px;
-}
-
-.search-form{
-    float: left;
-    border: 2px solid black;
-    background: gray;
-    border-radius: 10px;
-}
-
-#button-search{
-    position: relative;
-    left: 4px;
-    padding: 10px 15px;
-    border: 0px solid #008080;
-    background-color: gray ;
-    color:#fafafa;
-    font-weight:bold;
-    border-radius: 10px;
 }
 
 .nav-item{
@@ -50,59 +29,134 @@ a.nav-link{
     color: white;
 }
 
-a.nav.link-dark {
-    color: #0d2341;
+a.nav-link:hover{
+  color: orange;
 }
 
 .btn {
-    background: transparent;
+    font-weight: bold;
     color: #0d2341;
+}
+
+.btn:hover{
+  color: orange;
+}
+
+.navbar-link ul{
+  list-style: none;
 }
 
 .navbar-link {
     position: absolute;
+    text-align: center;
     left: 340px;
     top: 25px;
 }
-#beranda {
-    background-color: #0d2341;
-    height: 35px;
-    color: #f25624;
+
+.navbar-link li:hover{
+  background: darkblue;
 }
 
-.slider {
-    font: 600;
+.navbar-link > ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #262626;
+  color: #fff;
 }
 
-.img-thumbnail {
+.navbar-link > ul > li{
+  position: relative;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  height: 40px;
+}
+
+/* .dropdown{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0;
+} */
+
+.dropdown li{
+  background: #f25624;
+}
+
+.dropdown li:hover{
+  background: #5a5a5a;
+}
+/* End Navbar */
+
+/* start Search engine */
+.search_wrap{
+	width: 500px;
+	margin: 38px auto;
+}
+
+.search_wrap .search_box{
+	position: relative;
 	width: 250px;
+	height: 35px;
 }
 
-.slide {
-     padding-bottom: 10px;
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 18px;
 }
 
-.berita {
-    font-family: 'Oswald', sans-serif;
+.search_wrap .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: #7690da;
+	z-index: 1;
+	cursor: pointer;
 }
 
-.text-berita {
-    font-family: 'Montserrat', sans-serif;
+.search_wrap .search_box .btn:hover{
+	background: #708bd2;	
 }
 
-#news {
-    text-align:justify;
+.search_wrap .search_box .btn.btn_common .fas{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 20px;
 }
 
-#biru {
+.search_wrap.search_wrap_1 .search_box .btn{
+	right: 0;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 3px;
+}
+
+/* end Search Engine */
+
+
+
+/* APA ITU VOKASI */
+#text-blue {
     color: #0d2341;
 }
 
-#oren {
+#text-orange {
     color: #f25624;
 }
 
-#item {
+#text-black {
     color: black;
 }
 
@@ -120,13 +174,13 @@ a.nav.link-dark {
     font-style: italic;
 }
 
-.daftar {
+.text-daftar {
     font-size: 50px;
     font-family: 'Niramit', sans-serif;
     text-align: center;
 }
 
-.lihat {
+.text-lihat {
     font-size: 50px;
     font-family: 'Niramit', sans-serif;
     text-align: center;
@@ -162,81 +216,75 @@ a.nav.link-dark {
     height: 500px;
   }
   
-  /*css for manual slide navigation*/
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
   
-  .navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+  /* Slideshow container */
+  .slideshow-container {
+    padding-top: 250px;
+    /* background-size: cover; */
+    padding-bottom: 100px;
   }
   
-  .manual-btn{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
     cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
-    background: #40D3DC;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
     position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
   
-  .navigation-auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
   
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
   }
   
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
   
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
   }
   
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
+  /* Add an italic font style to all quotes */
+  q {
+      font-style: italic;
+    }
   
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+
+
