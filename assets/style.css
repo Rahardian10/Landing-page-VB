@@ -145,7 +145,31 @@ a.nav-link:hover{
 
 /* end Search Engine */
 
+/* Berita */
+.row {
+  border: 1px transparent;
+}
 
+.berita {
+  padding: 30px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.gambar-berita {
+  width: 210px;
+}
+
+.txt-berita1 {
+  font-size: 12px;
+}
+
+#see-more {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: initial;
+  font-size: 20px;
+}
+/* End Berita */
 
 /* APA ITU VOKASI */
 #text-blue {
@@ -287,4 +311,38 @@ a.nav-link:hover{
   .author {color: cornflowerblue;}
 
 
+/* Cara Mendaftar */
+.row {
+  border: 1px transparent;
+}
 
+.tata-cara {
+  padding: 30px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.img-tata-cara1 {
+  width: 200px;
+}
+
+.txt-tata-cara1 {
+  font-size: 13px;
+}
+
+.img-tata-cara2 {
+  width: 300px;
+}
+
+.txt-tata-cara2 {
+  font-size: 13px;
+}
+
+.img-tata-cara3 {
+  width: 200px;
+}
+
+.txt-tata-cara3 {
+  font-size: 13px;
+}
+/* End Cara Mendaftar */
