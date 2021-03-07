@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5 px 10%;
+}
+
 /* NAVBAR */
 .img-logo{
     width: 210px;
@@ -91,58 +104,39 @@ a.nav-link:hover{
 /* End Navbar */
 
 /* start Search engine */
-.search_wrap{
-	width: 500px;
-	margin: 38px auto;
+.search-engine{
+  padding-top: 0.15%;
+  padding-bottom: 2.5%;
+  padding-right: 7%;
 }
 
-.search_wrap .search_box{
-	position: relative;
-	width: 250px;
-	height: 35px;
+.input{
+  position: relative;
+	width: 220px;
+	height: 40px;
+  padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 10px;
+  color: #fff;
+  background-color: #fff;
 }
 
-.search_wrap .search_box .input{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 10px 20px;
-	border-radius: 10px;
-	font-size: 18px;
-}
-
-.search_wrap .search_box .btn{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 60px;
-	height: 100%;
-	background: #7690da;
+/* .btn-search{
+  position: absolute;
+  top: 50%;
+	left: 50%;
+  width: 60px;
+	height: 7%;
+	background: #717171;
 	z-index: 1;
 	cursor: pointer;
-}
-
-.search_wrap .search_box .btn:hover{
-	background: #708bd2;	
-}
-
-.search_wrap .search_box .btn.btn_common .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	color: #fff;
-	font-size: 20px;
-}
-
-.search_wrap.search_wrap_1 .search_box .btn{
-	right: 0;
-	border-top-right-radius: 10px;
+  border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-}
+} */
 
+.btn-search:hover{
+  background-color: darkblue;
+}
 /* end Search Engine */
 
 /* Berita */
