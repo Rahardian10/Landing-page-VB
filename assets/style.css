@@ -94,13 +94,13 @@ a.nav-link:hover{
   padding: 0;
 } */
 
-.dropdown li{
+/* .dropdown li{
   background: #f25624;
 }
 
 .dropdown li:hover{
   background: #5a5a5a;
-}
+} */
 /* End Navbar */
 
 /* start Search engine */
@@ -117,7 +117,7 @@ a.nav-link:hover{
   padding: 10px 20px;
 	border-radius: 5px;
 	font-size: 10px;
-  color: #fff;
+  color: #0d2341;
   background-color: #fff;
 }
 
@@ -135,13 +135,18 @@ a.nav-link:hover{
 } */
 
 .btn-search:hover{
-  background-color: darkblue;
+  background-color: transparent;
 }
 /* end Search Engine */
 
 /* Berita */
 .row {
   border: 1px transparent;
+}
+
+#title-berita {
+  padding-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .berita {
@@ -339,4 +344,46 @@ a.nav-link:hover{
 .txt-tata-cara3 {
   font-size: 13px;
 }
+
+.daftar-mitra-industri {
+  border: 10px;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 20px;
+}
+
+.daftar-mitra-smk {
+  border: 10px;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 20px;
+}
+
+#industri {
+  color: #f25624;
+  background-color: #0d2341;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#smk {
+  color: #0d2341;
+  background-color: #f25624;
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* End Cara Mendaftar */
+
+
+/* Acara dan Pelatihan */
+.acara-pelatihan {
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/* End Acara dan Pelatihan */
+
+/* E-Learning */
+.img-learning {
+  width: 1500px;
+}
+/* End E-Learning */
