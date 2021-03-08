@@ -62,8 +62,8 @@ a.nav-link:hover{
 .navbar-link {
     position: absolute;
     text-align: center;
-    left: 340px;
-    top: 25px;
+    left: 300px;
+    top: 23px;
 }
 
 .navbar-link li:hover{
@@ -84,6 +84,7 @@ a.nav-link:hover{
   font-family: Arial, Helvetica, sans-serif;
   float: left;
   height: 40px;
+  text-align: center;
 }
 
 /* .dropdown{
@@ -107,7 +108,7 @@ a.nav-link:hover{
 .search-engine{
   padding-top: 0.15%;
   padding-bottom: 2.5%;
-  padding-right: 7%;
+  padding-right: 5%;
 }
 
 .input{
@@ -128,13 +129,16 @@ a.nav-link:hover{
 /* end Search Engine */
 
 /* slider */
+.carousel{
+  /* padding-top: -5%; */
+  margin-top: -2%;
+}
  .carousel-item{
    height: 30rem;
    background: #777;
    color: white;
    position: relative;
    height: 30%;
-   /* margin-bottom: 12%; */
  }
 
  .container{
