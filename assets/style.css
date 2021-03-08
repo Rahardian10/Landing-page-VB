@@ -115,33 +115,42 @@ a.nav-link:hover{
 	width: 220px;
 	height: 40px;
   padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 10px;
 	font-size: 10px;
   color: #fff;
   background-color: #fff;
 }
 
-/* .btn-search{
-  position: absolute;
-  top: 50%;
-	left: 50%;
-  width: 60px;
-	height: 7%;
-	background: #717171;
-	z-index: 1;
-	cursor: pointer;
-  border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-} */
-
-.btn-search:hover{
+#fas-search:hover{
   background-color: darkblue;
+  color: #f25624;
 }
 /* end Search Engine */
 
+/* slider */
+ .carousel-item{
+   height: 30rem;
+   background: #777;
+   color: white;
+   position: relative;
+   height: 30%;
+   /* margin-bottom: 12%; */
+ }
 
+ .container{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding-bottom: 50px;
+ }
+/* end slider */
 
 /* APA ITU VOKASI */
+.text-content{
+  margin-top: 8%;
+}
+
 #text-blue {
     color: #0d2341;
 }
@@ -180,105 +189,7 @@ a.nav-link:hover{
     text-align: center;
 }
 
-/* slider */
-  .slider{
-    padding-top: 75px;  
-    margin-bottom: 70px;
-    width: 800px;
-    height: 500px;
-    border-radius: 0;
-    overflow: hidden;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 800px;
-    height: 500px;
-  }
-  
-  * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
-  
-  /* Slideshow container */
-  .slideshow-container {
-    padding-top: 250px;
-    /* background-size: cover; */
-    padding-bottom: 100px;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-      text-align: center;
-      padding: 20px;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Add an italic font style to all quotes */
-  q {
-      font-style: italic;
-    }
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+/* end APA ITU VOKASI */
 
 
 
