@@ -16,6 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Niramit:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
     
 
     <title>Vokasi Bisa</title>
@@ -27,7 +37,7 @@
     <header>
         <nav>
             <div class="nav-toggle">
-                <img src="assets/img/logo.png" alt="" class="img-logo">
+                <img src="assets/img/logo.png" alt="" class="img-logo"> 
             </div>
             
             <div class="navbar-link">
@@ -48,83 +58,274 @@
                       <a class="nav-link" href="#">Mitra SMK</a>
                     </li>
                     <li class="nav-item">
+                      <!-- <a class="nav-link-dark" href="#" tabindex="-1">Login</a> -->
                       <button class="btn" id="login" tabindex="-1">Login</button>
                     </li>
                   </ul>
-            </div>            
+            </div>
+            <!-- search engine -->
+              
+               
+            <!-- end search engine -->
         </nav>
-
-        <!-- search engine -->
         <div class="search-engine">
         <input type="text" class="input" placeholder="Masukkan Kata Kunci">
-        <!-- <di class="btn-search"> -->
+        <di class="btn-search">
           <i class="fas fa-search" id="fas-search"></i>
-        <!-- </di> -->
+        </div>
       </div>
-      <!-- end search engine -->
     </header>
     <!-- end navbar atas -->
 
     <!-- slider -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/slider.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/slider.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/slider.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <p class="vokasi-info">#VOKASINFO</p>
+  <p class="author">MAGANG TERSTRUKTUR UNTUK <br>
+  LINK AND MATCH PENDIDIKAN <br>
+  VOKASI</p>
+  <a href="#" class="click">KLIK DISINI >></a>
+</div>
+
+<div class="mySlides">
+  <p class="vokasi-info">#VOKASINFO</p>
+  <p class="author">MAGANG TERSTRUKTUR UNTUK <br>
+  LINK AND MATCH PENDIDIKAN <br>
+  VOKASI</p>
+  <a href="#" class="click">KLIK DISINI >></a>
+</div>
+
+<div class="mySlides">
+  <p class="vokasi-info">#VOKASINFO</p>
+  <p class="author"><style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+</style>MAGANG TERSTRUKTUR UNTUK <br>
+  LINK AND MATCH PENDIDIKAN <br>
+  VOKASI</p>
+  <a href="#" class="click">KLIK DISINI >></a>
+</div>
+
+<!-- <a class="prev" onclick="plusSlides(-1)"><img src="assets/img/panah.png" alt=""></a> -->
+<a class="next" onclick="plusSlides(1)"><img src="assets/img/panah.png" alt=""></a>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
     <!-- end slider -->
 
-
-
-    
     <!-- Berita -->
+    <h1 class="container" id="title-berita">BERITA TERKINI</h1>
+
+    <div class="row">   
+  
+    <div class="col-md-6">
+      <div class="berita"> <img src="assets/img/berita1.jpg" class="gambar-berita" alt="">PRODUK SMK <span id="text-orange"> MENDUNIA </span>
+        <p class="txt-berita1">Berita membanggakan datang dari <br> SMKN Karya Busana Mandiri, Jawa <br> Timur. Pasalnya, produk batik khas <br> yang menjadi produk unggulannya <br> telah dijual ke 11 negara... <br>
+          <a href="#" class="baca-disini">Baca Disini >></a>
+        </p>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div class="berita"> <img src="assets/img/berita3.jpg" class="gambar-berita" alt="">VOKASI BISA GELAR <br> PELATIHAN UNTUK <span id="text-orange"> 1000 <br> GURU SMK</span>
+      <p class="txt-berita3">Mengetahui banyak antusiasme <br> tenaga pendidik SMK terhadap...</p>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div class="berita"> <img src="assets/img/berita2.jpg" class="gambar-berita" alt="">LEARNING FACTORY <br> TERBESAR <span id="text-orange"> SEASIA <br> TENGGARA </span>
+      <p class="txt-berita2">SMKN 1 Rajawali Kalimantan Barat <br> memecahkan rekor sebagai seko... <br>
+      <a href="#" class="baca-disini">Baca Disini >></a>
+      </p>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+    <div class="berita"> <img src="assets/img/berita4.jpg" class="gambar-berita" alt="">SUCCESS STORY: <span id="text-orange"> 5 BUDAYA <br> EKSEKUSI DALAM SMK </span> </div>
+    <p class="txt-berita4">Penerapan 5 Budaya Eksekusi <br> telah membawa dampak besar <br> bagai perkembangan SMK, hal...</p>
+    <a href="#" class="baca-disini">Baca Disini >></a>
+    </div>
+  
+    </div>
     
+    <a href="" class="container" id="see-more">Lihat Lebih Banyak >>></a>
     <!-- End Berita -->
 
 <!-- Apa itu Vokasi? -->
-
-  <div class="text-content">  
-    <h1 class="what"> APA ITU <span id="text-blue"> VOKASI </span> <span id="text-orange">BISA<span id="text-black">?</span> </span> </h1>
-    <h3 class="pengertian">VOKASI BISA merupakan sebuah lembaga pengembangan pendidikan Vokasi SMK <br>
-      yang berfokus untuk menciptakan link and match antara Industri dan dunia <br>
-      pendidikan melalui program magang terintegrasii, pengembangan kapasitas dan <br>
-      pelatihan bagi SMK
-    </h3>
-  </div>>  
+<h1 class="what"> APA ITU <span id="text-blue"> VOKASI </span> <span id="text-orange">BISA<span id="text-black">?</span> </span> </h1>
+<h3 class="pengertian">VOKASI BISA merupakan sebuah lembaga pengembangan pendidikan Vokasi SMK <br>
+  yang berfokus untuk menciptakan link and match antara Industri dan dunia <br>
+  pendidikan melalui program magang terintegrasii, pengembangan kapasitas dan <br>
+  pelatihan bagi SMK
+</h3>
 <!-- End Apa itu Vokasi? -->
 
 <!-- Cara Mendaftar -->
 <h1 class="text-daftar">Mendaftar sebagai pemagang?</h1>
 <h1 class="text-lihat">Lihat tata caranya <span id="text-orange"> disini.</span></h1>
 
+<div class="row">
+
+<div class="col-md-4">
+  <div class="tata-cara" cellpadding="30"> <img src="assets/img/tatacara1.png" class="img-tata-cara1" alt=""> 
+  <p class="txt-tata-cara1">Lakukan Pendaftaran melalui website <br>
+     Vokasi Bisa untuk menjadi pemagang <br>
+      terdaftar. Untuk registrasi, <a href="" class="click-tata-cara"> klik disini </a></p>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="tata-cara" cellpadding="30"> <img src="assets/img/tatacara2.png" class="img-tata-cara1" alt=""> 
+  <p class="txt-tata-cara1">Lakukan program pemagangan <br>
+     dengan menerapkan aplikasi Vokasi <br>
+      Bisa untuk tasking, absen, dan <br>
+       membuat portofolio kerja anda.
+  <p>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="tata-cara" cellpadding="30"> <img src="assets/img/tatacara3.png" class="img-tata-cara1" alt=""> 
+  <p class="txt-tata-cara1">Selamat, anda telah menambahkan <br>
+    portofolio kerja anda! </p>
+  </div>
+</div>
+</div>
+
+<br>
+
+<h1 class="pengertian">Bukan mendaftar sebagai pemagang? Klik pilihan dibawah ini untuk</h1>
+<h1 class="pengertian">mendapatkan panduan dan mendaftar menjadi Mitra Industri atau Mitra SMK.</h1>
+
+<div class="row">
+<div class="col-md-6">
+  <div class="daftar-mitra-industri"> 
+    <button class="btn btn-primary btn-lg" id="industri">DAFTAR SEBAGAI MITRA <br>
+      INDUSTRI
+    </button>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="daftar-mitra-smk"> 
+    <button class="btn btn-danger btn-lg" id="smk">DAFTAR SEBAGAI MITRA <br>
+      SMK
+    </button>
+  </div>
+</div>
+
+</div>
+
+ <!-- Acara dan Pelatihan  -->
+<!-- 
+ <div class="container">
+  <h1 class="acara-pelatihan">ACARA DAN PELATIHAN</h1>
+ </div>
+
+ <div class="row">
+
+   <div class="col-md-3"> 
+     <div class="box-acara">
+       <img src="assets/img/pelatihan1.png" alt="">
+     </div>
+   </div>
+
+   <div class="col-md-3"> 
+    <div class="box-acara">
+      <img src="assets/img/pelatihan2.png" alt="">
+    </div>
+  </div>
+
+  <div class="col-md-3"> 
+    <div class="box-acara">
+      <img src="assets/img/pelatihan3.png" alt="">
+    </div>
+  </div>
+
+  <div class="col-md-3"> 
+    <div class="box-acara">
+      <img src="assets/img/pelatihan4.png" alt="">
+    </div>
+  </div>
 
 
+ </div> -->
 
+ <!-- End Acara dan Pelatihan  -->
 
+<!-- E-Learning -->
+<div class="e-learning">
+  <img src="assets/img/e-learning.png" class="img-learning" alt="">
+    <div class="e-text">
+      <h2 class="e-login">LOGIN E-LEARNING #VOKASIBISA</h2>
+      <p class="e-join">IKUTI BANYAK <br> PELATIHAN DAN <br> PEMBELAJARAN <br> DARING DISINI!</p>
+      <p class="e-daftar">Belum mempunyai akun? <a href="" class="e-click"> Klik Disini</a></p>
+      <button class="btn btn-warning btn-lg">LOGIN DISINI</button>
+    </div>
+</div>
+<!-- End E-Learning -->
 
+<!-- Footer -->
+<div class="row">
 
+  <div class="col-md-4">
+      <div class="footer1">
+        <img src="assets/img/logo.png" alt="" class="footer-logo">
+      </div>
+    </div>
 
+    <div class="col-md-8">
+      <div class="footer2">
+        <img src="assets/img/footer2.png" alt="" class="footer-contact"> 
+        
+        <div class="contact">
+          <h1 class="contact-us">Contact Us</h1>
+            <div class="kontak">
+              <img src="assets/img/email.png" alt="" class="logo-email"> <span class="txt-email">vokasi.bisa@gmail.com</span>
+              <!-- <h1 class="txt-email">email</h1> -->
+              <img src="assets/img/call.png" alt="" class="logo-phone"> <span class="txt-phone">(+62) 858-884-881-568</span>
+              <!-- <h1 class="txt-phone">(+62) 858-884-881-568</h1> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </div>
+<!-- End Footer -->
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
