@@ -64,8 +64,8 @@ a.nav-link:hover{
 .navbar-link {
     position: absolute;
     text-align: center;
-    left: 340px;
-    top: 25px;
+    left: 300px;
+    top: 23px;
 }
 
 .navbar-link li:hover{
@@ -88,6 +88,7 @@ a.nav-link:hover{
   font-family: Arial, Helvetica, sans-serif;
   float: left;
   height: 40px;
+  text-align: center;
 }
 
 /* .dropdown{
@@ -111,7 +112,7 @@ a.nav-link:hover{
 .search-engine{
   padding-top: 0.15%;
   padding-bottom: 2.5%;
-  padding-right: 7%;
+  padding-right: 5%;
 }
 
 .input{
@@ -137,10 +138,6 @@ a.nav-link:hover{
 }
 /* end Search Engine */
 
-/* Berita */
-.row {
-  border: 1px transparent;
-}
 
 #title-berita {
   padding-top: 30px;
